@@ -3,7 +3,7 @@ class ProjectService {
 
   async loadProjects() {
     try {
-      let response = await fetch("./json/projects.json", {
+      let response = await fetch("json/projects.json", {
         mode: "no-cors"
       });
       let jsonData = await response.json();
