@@ -16,6 +16,12 @@ html {
   font-weight: 200;
 }
 
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
 body {
   margin: 0;
   background-color: var(--dark-background);
@@ -212,7 +218,8 @@ select {
   height: 500px;
 }
 
-#projects {
+/* Carousel------------------------- */
+/* #projects {
   width: 33%;
   margin: 1em auto;
 }
@@ -267,3 +274,4 @@ figcaption {
 .carousel-indicators li {
   height: 0.5em;
 }
+ */

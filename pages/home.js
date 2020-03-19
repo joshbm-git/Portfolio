@@ -4,7 +4,7 @@ export default class HomePage {
   }
 
   template() {
-    document.querySelector('#app').innerHTML += /*html*/ `
+    document.querySelector("#app").innerHTML += /*html*/ `
       <section id="home" class="page">
         <header id="banner">
         <h2>Hi, I'm Joshua </h2>
