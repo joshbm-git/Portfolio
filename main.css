@@ -14,10 +14,12 @@ html {
   text-align: center;
   width: 100%;
   font-weight: 200;
+
 }
 
 body {
   margin: 0;
+  background-color: var(--dark-background);
 }
 
 h1 {
@@ -70,7 +72,6 @@ h3 {
   display: none;
   /*min heigh is screen heigh minus height of tab and top bar */
   min-height: calc(100vh - 110px);
-  background-color: var(--dark-background);
   animation: fadeIn 0.4s;
   /* padding equals height of tabbar and topbar */
   padding: 55px 0;
@@ -156,12 +157,12 @@ h3 {
   }
 }
 
-.grid-container > article {
+.grid-container>article {
   text-align: center;
   padding: 10px;
 }
 
-.grid-container > article img {
+.grid-container>article img {
   max-width: 300px;
   width: 100%;
   margin-bottom: 1em;
