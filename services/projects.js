@@ -1,20 +1,18 @@
-class PersonService {
-    constructor() {}
+class ProjectService {
+  constructor() {}
 
-    async loadPersons() {
-        try {
-            let response = await fetch('../json/projects.json', {
-                mode: 'no-cors'
-            });
-            let jsonData = await response.json();
-            loaderService.show(false);
-            return jsonData.results;
-        } catch (error) {
-            console.log('Error getting persons:', error);
-            loaderService.show(false);
-        }
+  async loadProjects() {
+    try {
+      let response = await fetch("../json/projects.json", {
+        mode: "no-cors"
+      });
+      let jsonData = await response.json();
+      return jsonData;
+    } catch (error) {
+      console.log("Error getting persons:", error);
     }
+  }
 }
 
-const personService = new PersonService();
-export default personService;
+const projectService = new ProjectService();
+export default projectService;

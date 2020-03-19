@@ -14,7 +14,6 @@ html {
   text-align: center;
   width: 100%;
   font-weight: 200;
-
 }
 
 body {
@@ -157,12 +156,12 @@ h3 {
   }
 }
 
-.grid-container>article {
+.grid-container > article {
   text-align: center;
   padding: 10px;
 }
 
-.grid-container>article img {
+.grid-container > article img {
   max-width: 300px;
   width: 100%;
   margin-bottom: 1em;
@@ -211,4 +210,69 @@ select {
 #banner {
   border: solid;
   height: 500px;
+}
+
+#projects {
+  width: 25%;
+  margin: 0 auto;
+}
+
+figure {
+  position: relative;
+}
+
+figure img {
+  width: 100%;
+  filter: opacity(0.5);
+}
+
+figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-color-light);
+}
+
+.vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.vert .carousel-item-next,
+.vert .active.carousel-item-right {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100% 0);
+}
+
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+.carousel-indicators {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 20px;
+  right: 10px;
+  left: auto;
+  width: auto;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.carousel-indicators li {
+  display: block;
+  margin-bottom: 5px;
+  border: 1px solid #00a199;
+}
+.carousel-indicators li.active {
+  margin-bottom: 5px;
+  background: #00a199;
 }
