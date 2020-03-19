@@ -213,8 +213,8 @@ select {
 }
 
 #projects {
-  width: 25%;
-  margin: 0 auto;
+  width: 33%;
+  margin: 1em auto;
 }
 
 figure {
@@ -254,25 +254,16 @@ figcaption {
 
 .carousel-indicators {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  height: 20px;
-  right: 10px;
-  left: auto;
-  width: auto;
+  top: 1px;
+  right: -100px;
+  border: 20em;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+
 .carousel-indicators li {
-  display: block;
-  margin-bottom: 5px;
-  border: 1px solid #00a199;
-}
-.carousel-indicators li.active {
-  margin-bottom: 5px;
-  background: #00a199;
+  height: 0.5em;
 }
