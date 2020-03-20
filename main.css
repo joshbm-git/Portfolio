@@ -228,19 +228,24 @@ nav {
 }
 
 nav a {
-  color: gray;
+  color: white;
   text-decoration: none;
-  margin-right: 1em;
+  background-color: var(--dark-background);
+  padding: 1em;
+  text-transform: uppercase;
+  font-size: 1em;
 }
 
 nav a:hover {
   text-decoration: none;
-  color: white;
+  color: black;
+  background-color: white;
+
 }
 
 .active {
-  text-decoration: underline;
-  color: white;
+  color: black;
+  background-color: white;
 }
 
 
