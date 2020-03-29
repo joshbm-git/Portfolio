@@ -1,30 +1,31 @@
 /* ---------- root variables ---------- */
 :root {
-  --text-color-light: #f1f1f1;
-  --text-color-dark: #333;
-  --dark-background: #141211;
-  --light-background: #f1f1f4;
+  --text-color-light: #ececec;
+  --text-color-dark: #141414;
+  --dark-background: #0a0a0a;
+  --light-background: #f6f6f6;
+  --grey-background: #e2e2e2;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /* ---------- general styling ---------- */
 html {
   color: var(--text-color-dark);
-  font-family: 'Sen', sans-serif;
+  font-family: "Sen", sans-serif;
   height: 100%;
   text-align: center;
   width: 100%;
   font-weight: 200;
 }
 
-html,
 body {
-  position: relative;
-  height: 100%;
-}
-
-body {
+  background-color: var(--grey-background);
   margin: 0;
-  background-color: var(--dark-background);
 }
 
 h1 {
@@ -38,38 +39,7 @@ h3 {
   letter-spacing: 2px;
 }
 
-
-/* ---------- animations ---------- */
-/* fade in */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-
-.hide {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 0.4s, opacity 0.4s linear;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /* ---------- styling ---------- */
-
 iframe {
   border: none;
   width: 100%;
@@ -109,144 +79,333 @@ select {
   border-radius: 0;
 }
 
-/* ------------------------- */
-#banner {
-  border: solid;
-  height: 500px;
+/* ---------- width styling ---------- */
+@media (min-width: 320px) {
+  nav,
+  #home,
+  #projects,
+  #socials {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
+@media (min-width: 768px) {
+  nav,
+  #home,
+  #projects,
+  #socials {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1080px) {
+  nav,
+  #home,
+  #projects,
+  #socials {
+    width: 50%;
+  }
+}
+
+/* ---------- nav styling ---------- */
 nav {
-  padding-top: 0.75em;
-  position: -webkit-sticky;
-  /* Safari */
-  position: sticky;
+  background-color: var(--grey-background);
+  height: 5vh;
+}
+
+/* ---------- topbar styling ---------- */
+.topbar {
+  color: var(--text-color-light);
+  text-transform: uppercase;
+  position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
-nav a {
-
+.topbar a {
   color: white;
-  text-decoration: none;
-  background-color: var(--dark-background);
-  padding: 1em;
+  color: var(--text-color-dark);
   text-transform: uppercase;
-  font-size: 1em;
+  height: 100%;
+  width: 10em;
 }
 
-nav a:hover {
+.topbar a:hover {
   text-decoration: none;
-  color: black;
-  background-color: white;
-
+  background-color: var(--light-background);
 }
 
-.active {
-  color: black;
-  background-color: white;
+.topbar a.active {
+  background-color: var(--light-background);
+  font-weight: bold;
 }
 
-
-.main section {
-  margin: 0 auto;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.main figure {
-  border: solid;
-  position: relative;
-  width: 20%;
-
-}
-
-.main #page4 figure {
-  width: 60%;
-}
-
-.main figure img {
+/* ---------- tabbar styling ---------- */
+.tabbar {
+  background-color: var(--dark-background);
   width: 100%;
-  border: solid;
-  filter: brightness(45%);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
-
-.main section figcaption {
-  font-size: 1.75em;
-  white-space: nowrap;
+/* Style the links inside the navigation bar */
+.tabbar a i {
   color: white;
-  border-bottom: 5px solid white;
-  padding-bottom: 1px;
-  text-align: center;
+  background-color: var(--dark-background);
+  font-size: 2em;
+  margin-left: 1em;
+}
+
+/* Change the color of links on hover */
+.tabbar a:hover {
+  background-color: var(--light-background);
+}
+
+/* ---------- page styling ---------- */
+.page {
+  display: none;
+  min-height: 100vh;
+  /* padding equals height of tabbar and topbar */
+  padding: 55px 0;
+}
+
+/* ---------- animations ---------- */
+/* fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.4s, opacity 0.4s linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------- main styling ---------- */
+main {
+  background-color: var(--grey-background);
+}
+
+main section {
+  background-color: var(--light-background);
+}
+
+/* ---------- home styling ---------- */
+
+#banner {
+  width: 100%;
+  margin: 0 auto;
+  border: none;
+  position: relative;
+}
+
+#banner img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border: none;
+  opacity: 0.25;
+}
+
+#banner figcaption {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.main section figcaption:hover {
-  color: lightgray;
-
+#banner figcaption h1 {
+  font-size: 4em;
 }
 
-
-#pagination {
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 30px;
-  list-style: none;
+#banner figcaption h2 {
+  font-size: 2em;
 }
 
-#pagination li {
-  position: relative;
-  margin: 20px 0;
-  background: #fff;
-  border-radius: 100%;
-  width: 8px;
-  height: 8px;
-  transition: all 0.2s ease;
+#banner figcaption p {
+  font-size: 1.5em;
 }
 
-#pagination li:hover {
-  transform: scale(1.5);
+@media (min-width: 320px) {
+  #exp {
+    padding: 2em;
+  }
+  #exp .expInner {
+    padding: 5em 1em;
+    margin-top: 5em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  #exp i {
+    position: absolute;
+    border-radius: 50%;
+    padding: 0.5em;
+    top: -40px;
+    font-size: 3em;
+    color: white;
+  }
+
+  #exp h2 {
+    font-size: 1.75em;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  #exp p,
+  #exp li {
+    font-size: 1.25em;
+  }
 }
 
-#pagination a {
-  position: absolute;
-  text-decoration: none;
-  left: 0;
-  top: 0;
-  color: inherit;
-  width: 100%;
-  height: 100%;
+@media (min-width: 768px) {
+  #exp {
+    grid-template-columns: 50% 50%;
+    grid-gap: 1em;
+    grid-template-areas:
+      "exptop exptop"
+      "expleft expright";
+  }
+
+  #exp {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  #exp .expInner {
+    margin-top: 3em;
+  }
+
+  #expTop {
+    grid-area: exptop;
+  }
+
+  #expLeft {
+    grid-area: expleft;
+  }
+
+  #expRight {
+    grid-area: expright;
+  }
 }
 
-
-body.page-1 #pagination li:nth-of-type(1),
-body.page-2 #pagination li:nth-of-type(2),
-body.page-3 #pagination li:nth-of-type(3),
-body.page-4 #pagination li:nth-of-type(4),
-body.page-5 #pagination li:nth-of-type(5) {
-  transform: scale(2);
+#exp .fa-user {
+  background-color: red;
 }
 
-#socials a {
-  margin-right: 1em;
+#exp .fa-cog {
+  background-color: green;
 }
 
-#socials a i {
-  color: black;
-  font-size: 1.75em;
+#exp .fa-file {
+  background-color: blue;
 }
 
-#socials a i:hover {
-  color: gray;
-
+ul {
+  text-align: left;
+  padding: 0;
 }
 
-.jumbotron {
-  margin-top: 0.9em;
+li {
+  list-style-type: none;
+}
+
+/* ---------- projects styling ---------- */
+/* Grid container */
+.grid-container {
+  padding: 10px;
+}
+
+@media (min-width: 320px) {
+  .book article {
+    width: 100%;
+    margin: 2.5em auto;
+  }
+
+  .textOver {
+    position: relative;
+    margin: 0;
+  }
+
+  .textOver img {
+    width: 100%;
+    height: 500px;
+  }
+
+  .textOver figcaption {
+    white-space: nowrap;
+    color: white;
+    background-color: pink;
+    padding: 0.5em;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 375px) {
+  .book article {
+    width: 75%;
+    margin: 2.5em auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-columns: 50% 50%;
+  }
+
+  .book article {
+    width: 90%;
+  }
+
+  .textOver img {
+    height: 700px;
+  }
+
+  .grid-container article:hover img {
+    border: solid 5px pink;
+  }
+
+  .grid-container article:hover figcaption {
+    font-size: 1.55em;
+  }
+}
+
+@media (min-width: 1080px) {
+  .book article {
+    width: 75%;
+  }
+
+  .textOver img {
+    height: 1000px;
+  }
 }
