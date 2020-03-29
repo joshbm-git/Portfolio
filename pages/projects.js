@@ -5,10 +5,10 @@ export default class ProjectsPage {
 
   template() {
     document.querySelector("#app").innerHTML += /*html*/ `
-        <section id="projects" class="page">
+        <section id="projects" class="page" target="_blank">
         <div class="book grid-container">
         <a href="https://joshbm-git.github.io/BoardGameFinder/">
-        <article class="shadow-lg">
+        <article>
           <figure class="textOver">
             <img src="images/boardgamefinder.png" alt="" />
               <figcaption class="shadow">Boardgame Finder</figcaption>
@@ -18,8 +18,8 @@ export default class ProjectsPage {
 
 
 
-        <a href="https://joshbm-git.github.io/AeggetOgSkaegget/">
-        <article class="shadow-lg">
+        <a href="https://joshbm-git.github.io/AeggetOgSkaegget/" target="_blank">
+        <article >
           <figure class="textOver">
             <img src="images/aeggetogskaegget.png" alt="" />
               <figcaption class="shadow">Ægget og Skægget</figcaption>
@@ -29,8 +29,8 @@ export default class ProjectsPage {
         
         
         
-        <a href="https://joshbm-git.github.io/TeamPlayer/">        
-        <article class="shadow-lg">
+        <a href="https://joshbm-git.github.io/TeamPlayer/" target="_blank">        
+        <article>
           <figure class="textOver">
             <img src="images/teamplayer.png" alt="" />
               <figcaption class="shadow">TeamPlayer</figcaption>
@@ -38,8 +38,8 @@ export default class ProjectsPage {
         </article>
         </a>
 
-        <a href="https://joshbm-git.github.io/WebDoc/">
-        <article class="shadow-lg">
+        <a href="https://joshbm-git.github.io/WebDoc/" target="_blank">
+        <article>
           <figure class="textOver">
             <img src="images/webdoc.png" alt="" />
               <figcaption class="shadow">Webdoc</figcaption>

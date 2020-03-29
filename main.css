@@ -352,13 +352,25 @@ li {
 
   .textOver img {
     width: 100%;
-    height: 500px;
+    height: 750px;
+    object-fit: cover;
+    object-position: 0 0;
   }
 
   .textOver figcaption {
     white-space: nowrap;
     color: white;
-    background-color: pink;
+    background: #1f4037; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #1f4037,
+      #99f2c8
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #1f4037,
+      #99f2c8
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 0.5em;
     text-align: center;
     position: absolute;
@@ -370,39 +382,36 @@ li {
 }
 
 @media (min-width: 375px) {
-  .book article {
-    width: 75%;
-    margin: 2.5em auto;
-  }
 }
 
 @media (min-width: 768px) {
   .grid-container {
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
   }
 
   .book article {
-    width: 90%;
+    width: 95%;
   }
 
   .textOver img {
-    height: 700px;
+    width: 100%;
+    height: 600px;
   }
 
-  .grid-container article:hover img {
-    border: solid 5px pink;
+  .book article:hover img {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   }
 
-  .grid-container article:hover figcaption {
-    font-size: 1.55em;
+  .book article:hover figcaption {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   }
 }
 
 @media (min-width: 1080px) {
   .book article {
-    width: 75%;
+    width: 90%;
   }
 
   .textOver img {
