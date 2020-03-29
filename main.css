@@ -99,7 +99,7 @@ select {
   }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1440px) {
   nav,
   #home,
   #projects,
@@ -354,7 +354,8 @@ li {
     width: 100%;
     height: 750px;
     object-fit: cover;
-    object-position: 0 0;
+    object-position: 50% 0;
+    filter: brightness(97.5%);
   }
 
   .textOver figcaption {
