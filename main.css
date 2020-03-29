@@ -260,6 +260,10 @@ main section {
     justify-content: center;
   }
 
+  #exp div {
+    padding: 2em 3em;
+  }
+
   #exp i {
     position: absolute;
     border-radius: 50%;
@@ -342,7 +346,8 @@ li {
 @media (min-width: 320px) {
   .book article {
     width: 100%;
-    margin: 2.5em auto;
+    margin: 5em auto;
+    border: solid black;
   }
 
   .textOver {

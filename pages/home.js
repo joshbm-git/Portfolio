@@ -19,7 +19,8 @@ export default class HomePage {
             <i class="fas fa-user shadow-lg"></i>
             <div>
               <h2>About me</h2>
-              <p>I'm currently studying Multimediadesigner. I love coding and creating websites.</p>
+              <p>I love coding and creating websites. I have a firm knowledge of  HTML, CSS, and JS. I am a fast learner and love learning new things when it comes to coding. I am independent but also team oriented and easily get along with others in a team setting.</p>
+             
             </div>
           </div>
           <div id="expLeft" class="shadow expInner">
@@ -27,7 +28,7 @@ export default class HomePage {
             <div>
               <h2>Technologies that I know</h2>
               <ul>
-                <li>Html, Css, Vanilla JS</li>
+                <li>HTML, CSS, Vanilla JS</li>
                 <li>ES6</li>
                 <li>Github</li>
                 <li>Bootstrap</li>
