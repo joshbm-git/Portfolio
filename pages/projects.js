@@ -6,7 +6,9 @@ export default class ProjectsPage {
   template() {
     document.querySelector("#app").innerHTML += /*html*/ `
         <section id="projects" class="page" target="_blank">
+        <h2>2020</h2>
         <div class="book grid-container">
+
         <a href="https://joshbm-git.github.io/BoardGameFinder/">
         <article>
           <figure class="textOver">

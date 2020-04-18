@@ -19,7 +19,7 @@ export default class HomePage {
             <i class="fas fa-user shadow-lg"></i>
             <div>
               <h2>About me</h2>
-              <p>I love coding and creating websites. I have a firm knowledge of  HTML, CSS, and JS. I am a fast learner and love learning new things when it comes to coding. I am independent but also team oriented and easily get along with others in a team setting.</p>
+              <p>I love coding and creating websites. I have a firm knowledge of  HTML, CSS, and JS. I am a quick learner and love learning new things when it comes to coding. I am independent but also team oriented and easily get along with others in a team setting.</p>
              
             </div>
           </div>
@@ -34,7 +34,7 @@ export default class HomePage {
                 <li>Bootstrap</li>
                 <li>Single Page Applications</li>
                 <li>API</li>
-                <li>Headless CMS (Wordpress)</li>
+                <li>Wordpress</li>
                 <li>Firebase</li>
               </ul>
             </div>

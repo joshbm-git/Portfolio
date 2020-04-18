@@ -5,8 +5,8 @@ export default class TabBar {
 
   template() {
     document.querySelector("#app").innerHTML += /*html*/ `
-      <nav class="tabbar d-flex align-items-center">
-      <div id="socials">
+      <nav >
+      <div id="socials"class="tabbar d-flex justify-content-between align-items-center shadow-lg">
       <a href="https://github.com/joshbm-git"
         ><i class="fab fa-github"></i
       ></a>
@@ -17,6 +17,8 @@ export default class TabBar {
         ><i class="fas fa-envelope"></i
       ></a>
       </div>
+
+      
     </nav>
     `;
   }
