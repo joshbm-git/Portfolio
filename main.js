@@ -2,7 +2,7 @@
 import TopBar from "./components/topbar.js";
 import TabBar from "./components/tabbar.js";
 import HomePage from "./pages/home.js";
-import PersonsPage from "./pages/persons.js";
+import AboutPage from "./pages/about.js";
 import ProjectsPage from "./pages/projects.js";
 import spaService from "./services/spa.js";
 
@@ -11,7 +11,7 @@ let topBar = new TopBar();
 let tabBar = new TabBar();
 let homePage = new HomePage();
 let projectsPage = new ProjectsPage();
-let personsPage = new PersonsPage();
+let aboutPage = new AboutPage();
 
 // init services
 spaService.init();
