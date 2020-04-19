@@ -547,17 +547,32 @@ main section {
 #exp .exp-outer {
   margin: 7.5em 0 10em 0;
   position: relative;
+  padding-top: 1em;
   display: flex;
   justify-content: center;
 }
 
 #exp i {
   position: absolute;
-  border-radius: 50%;
-  padding: 0.5em;
-  top: -40px;
-  font-size: 3em;
-  color: white;
+  background-color: var(--light-background);
+  font-size: 5em;
+}
+
+#exp i,
+#exp .exp-inner {
+  background-color: var(--light-background);
+}
+
+#exp .fa-user {
+  color: var(--yellow);
+}
+
+#exp .fa-cog {
+  color: var(--orange);
+}
+
+#exp .fa-file {
+  color: var(--orange-coral);
 }
 
 #exp .exp-inner {
@@ -572,13 +587,12 @@ main section {
 #exp h2 {
   font-size: 1.5em;
   text-align: center;
-  margin-top: 0.5em;
+  margin: 1em 0 1em 0;
 }
 
 #exp h3 {
   font-size: 2.5em;
   text-align: center;
-  margin-top: 1em;
 }
 
 #exp p {
@@ -595,18 +609,6 @@ main section {
 
 #exp li {
   font-size: 1em;
-}
-
-#exp .fa-user {
-  background-color: var(--yellow);
-}
-
-#exp .fa-cog {
-  background-color: var(--orange);
-}
-
-#exp .fa-file {
-  background-color: var(--orange-coral);
 }
 
 ul {

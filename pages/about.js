@@ -31,7 +31,7 @@ export default class AboutPage {
 
           <div id="exp">
             <div id="expTop" class="shadow exp-outer">
-              <i class="fas fa-user shadow-lg"></i>
+              <i class="fas fa-user"></i>
               <div class="exp-inner">
                 <h2>About me</h2>
 
@@ -46,7 +46,7 @@ export default class AboutPage {
             </div>
             <div id="expBottom">
             <div id="expLeft" class="shadow exp-outer">
-              <i class="fas fa-cog shadow-lg"></i>
+              <i class="fas fa-cog"></i>
               <div class="exp-inner">
                 <h2>Skills</h2>
                 <div class="list-wrapper">
@@ -71,7 +71,7 @@ export default class AboutPage {
             </div>
             </div>
             <div id="expRight" class="shadow exp-outer">
-              <i class="fas fa-file shadow-lg"></i>
+              <i class="fas fa-file "></i>
               <div class="exp-inner">
                 <h2>CV</h2>
                 <h3>
