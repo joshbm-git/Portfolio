@@ -5,7 +5,7 @@ class SpaService {
 
   init() {
     this.pages = document.querySelectorAll(".page");
-    this.navItems = document.querySelectorAll(".topbar a");
+    this.navItems = document.querySelectorAll(".tabbar a");
     this.pageChange();
   }
 
@@ -37,6 +37,7 @@ class SpaService {
   // navigate to a new view/page by changing href
   navigateTo(pageId) {
     window.location.href = `#${pageId}`;
+    document.title = `#${pageId} | Board Game Finder`;
   }
 
   // set default page or given page by the hash url
@@ -59,6 +60,5 @@ class SpaService {
     }
   }
 }
-
 const spaService = new SpaService();
 export default spaService;

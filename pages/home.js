@@ -6,11 +6,14 @@ export default class HomePage {
   template() {
     document.querySelector("#app").innerHTML += /*html*/ `
       <section id="home" class="page">
-       <article>
+      <div class="article-wrapper d-flex">       
+      <article>
        <h1>Joshua Bacurio Mercado</h1>
        <p>Multimedia design student</p>
-       <button>Check out my projects!</button>
+       <button type="button" class=" btn-right"><a href="">Check out my projects!</a></button>
        </article>
+       </div>
+
       </section>
     `;
   }

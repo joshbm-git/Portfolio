@@ -5,9 +5,11 @@ export default class TopBar {
 
   template() {
     document.querySelector("#app").innerHTML += /*html*/ `
-      <nav class="topbar shadow d-flex justify-content-end">
-
-    </nav>
+    <div class="topbar-wrapper shadow">
+      <nav class="topbar">
+        <div class="logo">J</div>
+      </nav>
+    </div>
       `;
   }
 }

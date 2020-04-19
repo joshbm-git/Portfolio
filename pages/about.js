@@ -5,7 +5,7 @@ export default class AboutPage {
 
   template() {
     document.querySelector("#app").innerHTML += /*html*/ `
-        <section id="home" class="page shadow">
+        <section id="about" class="page shadow">
           <figure id="banner" class="shadow-sm">
             <img src="images/banner.png" alt="" />
             <figcaption>
