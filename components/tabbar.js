@@ -7,7 +7,7 @@ export default class TabBar {
     document.querySelector("#app").innerHTML += /*html*/ `
     <div class="tabbar-wrapper">
       
-      <nav class="tabbar">
+      <nav class="tabbar nav-links">
         
         <div class="logo">J</div>
 

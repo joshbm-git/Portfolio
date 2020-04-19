@@ -5,7 +5,7 @@ class SpaService {
 
   init() {
     this.pages = document.querySelectorAll(".page");
-    this.navItems = document.querySelectorAll(".tabbar a");
+    this.navItems = document.querySelectorAll(".nav-links a");
     this.pageChange();
   }
 

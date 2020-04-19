@@ -10,7 +10,7 @@ export default class HomePage {
       <article>
        <h1>Joshua Bacurio Mercado</h1>
        <p>Multimedia design student</p>
-       <button type="button" class=" btn-right"><a href="#projects">Check out my projects!</a></button>
+       <button type="button" class=" btn-right nav-links"><a href="#projects">Check out my projects!</a></button>
        </article>
        </div>
 
