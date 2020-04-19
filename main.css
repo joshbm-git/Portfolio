@@ -99,40 +99,35 @@ select {
   border-radius: 0;
 }
 
-/* ---------- width styling ---------- */
-#home,
-#projects,
-#about,
-#contact {
-  margin: 0 auto;
-  padding: 6vh 0 6vh 0;
-}
+/* ---------- animations ---------- */
+/* fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
 
-@media (min-width: 768px) {
-  #home,
-  #projects,
-  #about {
-    padding: 7.5vh 0 7.5vh 0;
+  to {
+    opacity: 1;
   }
 }
 
-@media (min-width: 1024px) {
-  #home,
-  #projects,
-  #about {
-    padding: 7.5vh 2em 7.5vh 2em;
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.4s, opacity 0.4s linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-@media (min-width: 1440px) {
-  #home,
-  #projects,
-  #about {
-    padding: 7.5vh 1em 7.5vh 1em;
-  }
-}
-
-/* ---------- nav styling ---------- */
+/* ---------- logo styling ---------- */
 .logo {
   font-family: "Stalemate", cursive;
   font-size: 3em;
@@ -246,55 +241,56 @@ select {
 /* ---------- page styling ---------- */
 .page {
   display: none;
-  min-height: 100vh;
+  margin: 0 auto;
 }
 
-/* ---------- animations ---------- */
-/* fade in */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+#projects {
+  padding: 1.5vh 0 1.5vh 0;
+}
+
+#about {
+  padding: 7.5vh 0 7.5vh 0;
+}
+
+@media (min-width: 768px) {
+  #projects {
+    padding: 5vh 1em 5vh 1em;
   }
 
-  to {
-    opacity: 1;
+  #about {
+    padding: 7.5vh 0 7.5vh 0;
   }
 }
 
-.hide {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 0.4s, opacity 0.4s linear;
+@media (min-width: 1024px) {
+  #projects,
+  #about {
+    padding: 7.5vh 2em 7.5vh 2em;
+  }
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
+@media (min-width: 1440px) {
+  #projects,
+  #about {
+    padding: 7.5vh 40em 7.5vh 40em;
   }
 }
 
 /* ---------- main styling ---------- */
-
 main section {
   background-color: var(--light-background);
 }
 
 /* ---------- home styling ---------- */
 .article-wrapper {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 #home article {
   text-align: center;
-  margin: 0 auto;
-  padding: 1em;
 }
 
 #home h1 {
@@ -448,7 +444,7 @@ main section {
   }
 
   .book article {
-    min-height: 850px;
+    min-height: 700px;
     margin: 0;
   }
 
@@ -491,8 +487,9 @@ main section {
 
 @media (min-width: 1440px) {
   .book article {
-    width: 100%;
+    width: 75%;
     min-height: 1000px;
+    margin: 0 auto;
   }
 
   .textOver img {
@@ -639,7 +636,7 @@ ul {
   #expBottom {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   #exp .exp-outer {
@@ -668,6 +665,26 @@ ul {
 
   #exp .exp-outer {
     margin: 5em 0em 2.5em 0em;
+  }
+
+  #expBottom .exp-outer {
+    width: 47.5%;
+  }
+
+  #expRight .exp-inner h3,
+  #expRight .exp-inner h4,
+  #expRight .exp-inner a,
+  #expRight .exp-inner p {
+    font-size: 1em;
+    margin-top: 1.5em;
+  }
+}
+
+@media (min-width: 1440px) {
+  #banner,
+  .contact {
+    width: 20%;
+    margin: 0 auto;
   }
 
   #expBottom .exp-outer {

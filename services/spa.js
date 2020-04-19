@@ -37,7 +37,7 @@ class SpaService {
   // navigate to a new view/page by changing href
   navigateTo(pageId) {
     window.location.href = `#${pageId}`;
-    document.title = `#${pageId} | Board Game Finder`;
+    document.title = `#${pageId} | Portfoilio`;
   }
 
   // set default page or given page by the hash url
