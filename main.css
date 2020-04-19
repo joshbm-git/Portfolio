@@ -253,10 +253,7 @@ select {
 }
 
 @media (min-width: 768px) {
-  #projects {
-    padding: 5vh 1em 5vh 1em;
-  }
-
+  #projects,
   #about {
     padding: 7.5vh 0 7.5vh 0;
   }
@@ -270,9 +267,12 @@ select {
 }
 
 @media (min-width: 1440px) {
-  #projects,
+  #projects {
+    padding: 7.5vh 5em 7.5vh 5em;
+  }
+
   #about {
-    padding: 7.5vh 40em 7.5vh 40em;
+    padding: 7.5vh 20em 7.5vh 20em;
   }
 }
 
@@ -488,12 +488,12 @@ main section {
 @media (min-width: 1440px) {
   .book article {
     width: 75%;
-    min-height: 1000px;
+    min-height: 1200px;
     margin: 0 auto;
   }
 
   .textOver img {
-    height: 700px;
+    height: 1000px;
   }
 }
 

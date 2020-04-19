@@ -37,7 +37,7 @@ class SpaService {
   // navigate to a new view/page by changing href
   navigateTo(pageId) {
     window.location.href = `#${pageId}`;
-    document.title = `#${pageId} | Portfoilio`;
+    document.title = `#${pageId} | Portfolio`;
   }
 
   // set default page or given page by the hash url
