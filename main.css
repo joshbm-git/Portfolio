@@ -54,6 +54,11 @@ h3 {
   letter-spacing: 2px;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 /* ---------- styling ---------- */
 iframe {
   border: none;
@@ -95,41 +100,35 @@ select {
 }
 
 /* ---------- width styling ---------- */
-nav,
 #home,
 #projects,
 #about,
 #contact {
   margin: 0 auto;
+  padding: 6vh 0 6vh 0;
 }
 
 @media (min-width: 768px) {
-  nav,
   #home,
   #projects,
-  #about,
-  #contact {
-    width: 95%;
+  #about {
+    padding: 7.5vh 0 7.5vh 0;
   }
 }
 
 @media (min-width: 1024px) {
-  nav,
   #home,
   #projects,
-  #about,
-  #contact {
-    width: 90%;
+  #about {
+    padding: 7.5vh 2em 7.5vh 2em;
   }
 }
 
 @media (min-width: 1440px) {
-  nav,
   #home,
   #projects,
-  #about,
-  #contact {
-    width: 50%;
+  #about {
+    padding: 7.5vh 1em 7.5vh 1em;
   }
 }
 
@@ -139,9 +138,6 @@ nav,
   font-size: 3em;
   font-weight: bold;
   color: white;
-}
-
-@media (min-width: 1024px) {
 }
 
 /* ---------- topbar styling ---------- */
@@ -170,7 +166,6 @@ nav,
 /* ---------- tabbar styling ---------- */
 .tabbar-wrapper {
   background: white;
-  border-top: 1px var(--light-grey-background) solid;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -200,11 +195,6 @@ nav,
   text-decoration: none;
 }
 
-.tabbar p {
-  padding: 0;
-  margin: 0;
-}
-
 /* Change the color of links on hover */
 .tabbar a.active {
   background-color: var(--light-orange);
@@ -214,6 +204,7 @@ nav,
 @media (min-width: 1024px) {
   .tabbar-wrapper {
     background: var(--topbar-background);
+    border: none;
     top: 0;
     bottom: initial;
   }
@@ -398,18 +389,21 @@ main section {
 
 /* ---------- projects styling ---------- */
 #projects .year {
-  margin: 4em auto 0 auto;
+  margin: 4em auto -2.5em auto;
   text-align: center;
 }
 
 .book {
-  margin: 2em auto;
   text-align: center;
+}
+
+.book a {
+  display: block;
 }
 
 .book article {
   width: 100%;
-  margin: 2.5em 0 5em 0;
+  margin-top: 7.5em;
   border-bottom: solid 1px black;
   padding-bottom: 2em;
 }
@@ -442,12 +436,6 @@ main section {
   color: var(--text-color-dark);
 }
 
-@media (min-width: 375px) {
-  .textOver img {
-    height: 750px;
-  }
-}
-
 @media (min-width: 768px) {
   .grid-container {
     display: grid;
@@ -455,8 +443,13 @@ main section {
     grid-gap: 5em;
   }
 
+  #projects .year {
+    margin: 1em auto 1em auto;
+  }
+
   .book article {
-    min-height: 750px;
+    min-height: 850px;
+    margin: 0;
   }
 
   .book figure {
@@ -474,6 +467,10 @@ main section {
 }
 
 @media (min-width: 1024px) {
+  #projects .year {
+    margin: 0.5em auto 1em auto;
+  }
+
   .book a:hover {
     text-decoration: none;
   }
@@ -505,118 +502,114 @@ main section {
 
 /* ---------- about styling ---------- */
 
-#banner {
-  width: 100%;
+#banner,
+.contact {
+  width: 75%;
   margin: 0 auto;
-  border: none;
+}
+
+#banner {
   position: relative;
+  border-radius: 10px;
 }
 
 #banner img {
   width: 100%;
-  height: 600px;
   object-fit: cover;
-  border: none;
-  opacity: 0.25;
+  border-radius: 10px;
+  border: solid 10px var(--light-orange);
 }
 
-#banner figcaption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1em;
 }
 
-#banner figcaption h1 {
-  font-size: 4em;
+.contact a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--dark-orange);
+  padding: 1em;
+  border-radius: 20px;
+  margin: 10px;
 }
 
-#banner figcaption h2 {
+.contact i {
+  color: white;
   font-size: 2em;
 }
 
-#banner figcaption p {
+#exp {
+  width: 95%;
+  margin: 0 auto;
+}
+
+#exp .exp-outer {
+  margin: 7.5em 0 10em 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#exp i {
+  position: absolute;
+  border-radius: 50%;
+  padding: 0.5em;
+  top: -40px;
+  font-size: 3em;
+  color: white;
+}
+
+#exp .exp-inner {
+  padding: 4em 1em 1em 1em;
+  width: 100%;
+}
+
+#exp #expTop .exp-inner {
+  padding: 4em 2.5em 1.5em 2.5em;
+}
+
+#exp h2 {
   font-size: 1.5em;
+  text-align: center;
+  margin-top: 0.5em;
 }
 
-@media (min-width: 320px) {
-  #exp {
-    padding: 2em;
-  }
-  #exp .expInner {
-    padding: 5em 1em;
-    margin-top: 5em;
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
-
-  #exp div {
-    padding: 2em 3em;
-  }
-
-  #exp i {
-    position: absolute;
-    border-radius: 50%;
-    padding: 0.5em;
-    top: -40px;
-    font-size: 3em;
-    color: white;
-  }
-
-  #exp h2 {
-    font-size: 1.75em;
-    text-align: center;
-    margin-bottom: 1em;
-  }
-
-  #exp p,
-  #exp li {
-    font-size: 1.25em;
-  }
+#exp h3 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 1em;
 }
 
-@media (min-width: 768px) {
-  #exp {
-    grid-template-columns: 50% 50%;
-    grid-gap: 1em;
-    grid-template-areas:
-      "exptop exptop"
-      "expleft expright";
-  }
+#exp p {
+  font-size: 1.1em;
+  padding: 1em 0 0.5em 0;
+}
 
-  #exp {
-    width: 75%;
-    margin: 0 auto;
-  }
+#exp .list-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em 0 0 0;
+}
 
-  #exp .expInner {
-    margin-top: 3em;
-  }
-
-  #expTop {
-    grid-area: exptop;
-  }
-
-  #expLeft {
-    grid-area: expleft;
-  }
-
-  #expRight {
-    grid-area: expright;
-  }
+#exp li {
+  font-size: 1em;
 }
 
 #exp .fa-user {
-  background-color: red;
+  background-color: var(--yellow);
 }
 
 #exp .fa-cog {
-  background-color: green;
+  background-color: var(--orange);
 }
 
 #exp .fa-file {
-  background-color: blue;
+  background-color: var(--orange-coral);
 }
 
 ul {
@@ -624,6 +617,68 @@ ul {
   padding: 0;
 }
 
-li {
-  list-style-type: none;
+#expRight .exp-inner h3,
+#expRight .exp-inner h4,
+#expRight .exp-inner a,
+#expRight .exp-inner p {
+  font-size: 1em;
+  margin-top: 1.5em;
+}
+
+#expRight .exp-inner h3 {
+  font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+  #banner,
+  .contact {
+    width: 35%;
+    margin: 0 auto;
+  }
+
+  #expBottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  #exp .exp-outer {
+    margin: 5em 0em 1em 0em;
+  }
+
+  #expBottom .exp-outer {
+    width: 45%;
+  }
+
+  #expRight .exp-inner h3,
+  #expRight .exp-inner h4,
+  #expRight .exp-inner a,
+  #expRight .exp-inner p {
+    font-size: 1em;
+    margin-top: 1.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  #banner,
+  .contact {
+    width: 25%;
+    margin: 0 auto;
+  }
+
+  #exp .exp-outer {
+    margin: 5em 0em 2.5em 0em;
+  }
+
+  #expBottom .exp-outer {
+    width: 45%;
+  }
+
+  #expRight .exp-inner h3,
+  #expRight .exp-inner h4,
+  #expRight .exp-inner a,
+  #expRight .exp-inner p {
+    font-size: 1em;
+    margin-top: 1.5em;
+  }
 }

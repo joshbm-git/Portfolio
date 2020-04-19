@@ -34,12 +34,8 @@ export default class TabBar {
             </a>
 
           
-  
-            <a href="#contact">  
-              <i class="fas fa-address-book"></i>
-              <p>contact</p>
-            </a>
-        
+
+            
         </div>
       
       </nav>
