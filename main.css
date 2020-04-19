@@ -268,11 +268,11 @@ select {
 
 @media (min-width: 1440px) {
   #projects {
-    padding: 7.5vh 5em 7.5vh 5em;
+    padding: 7.5vh 15em 7.5vh 15em;
   }
 
   #about {
-    padding: 7.5vh 20em 7.5vh 20em;
+    padding: 7.5vh 30em 7.5vh 30em;
   }
 }
 
