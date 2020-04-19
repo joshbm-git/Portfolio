@@ -6,47 +6,58 @@ export default class AboutPage {
   template() {
     document.querySelector("#app").innerHTML += /*html*/ `
         <section id="about" class="page">
-        <article>
-        <figure id="banner" class="shadow">
-          <img src="images/portrait.jpg" alt="" />
 
-          </figure> 
-
-       
-  <nav class="contact">
-        <a  href="https://github.com/joshbm-git"
-        ><i class="fab fa-github"></i
-      ></a>
-      <a href="https://www.linkedin.com/in/joshua-mercado-854767179/"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
-      <a href="mailto:joshuabacuriomercado@gmail.com"
-        ><i class="fas fa-envelope"></i
-      ></a>
-        </article> 
-        </nav>
 
 
 
 
           <div id="exp">
             <div id="expTop" class="shadow exp-outer">
-              <i class="fas fa-user"></i>
-              <div class="exp-inner">
-                <h2>About me</h2>
-
+              <div class="exp-inner expTop-tablet">
+              <article>
                 <h3 class="display-4">Hi, I'm Joshua</h3>
 
 
                 <p>I'm a Multimedia design student with ambitions of becoming a front-end developer.</p>
                 <p>I love coding and creating websites. I focus on making a responsive web design. I like playing with colors to make the design pop out.</p>
                 <p> I am a quick learner and love learning new things when it comes to coding. I can work independently but I am also team oriented and easily get along with others in a team setting.</p>
-               
-              </div>
+                </article>            
+                  </div>
+
+              <figure id="banner">
+         
+              <article>
+  
+              <img src="images/portrait.jpg" alt="" />
+         
+              <nav class="contact">
+                    <a  href="https://github.com/joshbm-git"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a href="https://www.linkedin.com/in/joshua-mercado-854767179/"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="mailto:joshuabacuriomercado@gmail.com"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                 
+                    </nav>
+                    </article> 
+              </figure> 
+
+              <div class="exp-inner expTop-mobile">
+              <h3 class="display-4">Hi, I'm Joshua</h3>
+
+
+              <p>I'm a Multimedia design student with ambitions of becoming a front-end developer.</p>
+              <p>I love coding and creating websites. I focus on making a responsive web design. I like playing with colors to make the design pop out.</p>
+              <p> I am a quick learner and love learning new things when it comes to coding. I can work independently but I am also team oriented and easily get along with others in a team setting.</p>
+             
+            </div>
             </div>
             <div id="expBottom">
             <div id="expLeft" class="shadow exp-outer">
-              <i class="fas fa-cog"></i>
+              <i class="fas fa-cog inner-icon"></i>
               <div class="exp-inner">
                 <h2>Skills</h2>
                 <div class="list-wrapper">
@@ -71,7 +82,7 @@ export default class AboutPage {
             </div>
             </div>
             <div id="expRight" class="shadow exp-outer">
-              <i class="fas fa-file "></i>
+              <i class="fas fa-file inner-icon"></i>
               <div class="exp-inner">
                 <h2>CV</h2>
                 <h3>

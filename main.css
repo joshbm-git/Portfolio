@@ -244,35 +244,56 @@ select {
   margin: 0 auto;
 }
 
-#projects {
-  padding: 1.5vh 0 1.5vh 0;
-}
-
+#projects,
 #about {
-  padding: 7.5vh 0 7.5vh 0;
+  padding-top: 7.5vh;
 }
 
 @media (min-width: 768px) {
   #projects,
   #about {
-    padding: 7.5vh 0 7.5vh 0;
+    padding-top: 7.5vh;
+  }
+
+  #projects,
+  #about {
+    width: 95%;
   }
 }
 
 @media (min-width: 1024px) {
   #projects,
   #about {
-    padding: 7.5vh 2em 7.5vh 2em;
+    padding-top: 7.5vh;
+  }
+
+  nav,
+  #projects,
+  #about {
+    width: 90%;
   }
 }
 
 @media (min-width: 1440px) {
-  #projects {
-    padding: 7.5vh 15em 7.5vh 15em;
+  #projects,
+  #about {
+    padding-top: 10vh;
   }
 
+  .tabbar,
+  #projects,
   #about {
-    padding: 7.5vh 30em 7.5vh 30em;
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1920px) {
+  .tabbar,
+  #projects,
+  #about {
+    width: 50%;
+    margin: 0 auto;
   }
 }
 
@@ -385,8 +406,8 @@ main section {
 
 /* ---------- projects styling ---------- */
 #projects .year {
-  margin: 4em auto -2.5em auto;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .book {
@@ -399,7 +420,7 @@ main section {
 
 .book article {
   width: 100%;
-  margin-top: 7.5em;
+  margin-bottom: 7.5em;
   border-bottom: solid 1px black;
   padding-bottom: 2em;
 }
@@ -416,7 +437,7 @@ main section {
   height: 400px;
   object-fit: cover;
   object-position: 50% 0;
-  filter: brightness(50%);
+  filter: brightness(75%);
 }
 
 .book article figcaption {
@@ -436,16 +457,12 @@ main section {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 5em;
-  }
-
-  #projects .year {
-    margin: 1em auto 1em auto;
+    grid-gap: 3em;
   }
 
   .book article {
     min-height: 700px;
-    margin: 0;
+    margin-bottom: 5em;
   }
 
   .book figure {
@@ -463,10 +480,6 @@ main section {
 }
 
 @media (min-width: 1024px) {
-  #projects .year {
-    margin: 0.5em auto 1em auto;
-  }
-
   .book a:hover {
     text-decoration: none;
   }
@@ -486,14 +499,17 @@ main section {
 }
 
 @media (min-width: 1440px) {
+  .grid-container {
+    grid-gap: 5em;
+  }
+
   .book article {
-    width: 75%;
-    min-height: 1200px;
+    min-height: 1100px;
     margin: 0 auto;
   }
 
   .textOver img {
-    height: 1000px;
+    height: 900px;
   }
 }
 
@@ -539,26 +555,19 @@ main section {
   font-size: 2em;
 }
 
-#exp {
-  width: 95%;
-  margin: 0 auto;
-}
-
 #exp .exp-outer {
-  margin: 7.5em 0 10em 0;
+  margin: 0em 0 5em 0;
   position: relative;
   padding-top: 1em;
-  display: flex;
-  justify-content: center;
 }
 
-#exp i {
+#exp .inner-icon {
   position: absolute;
   background-color: var(--light-background);
   font-size: 5em;
 }
 
-#exp i,
+#exp i.inner-icon,
 #exp .exp-inner {
   background-color: var(--light-background);
 }
@@ -581,7 +590,7 @@ main section {
 }
 
 #exp #expTop .exp-inner {
-  padding: 4em 2.5em 1.5em 2.5em;
+  padding: 2.5em;
 }
 
 #exp h2 {
@@ -591,8 +600,8 @@ main section {
 }
 
 #exp h3 {
-  font-size: 2.5em;
-  text-align: center;
+  font-size: 3.5em;
+  text-align: left;
 }
 
 #exp p {
@@ -616,23 +625,46 @@ ul {
   padding: 0;
 }
 
+#expBottom .exp-outer {
+  display: flex;
+  justify-content: center;
+}
+
 #expRight .exp-inner h3,
 #expRight .exp-inner h4,
 #expRight .exp-inner a,
 #expRight .exp-inner p {
   font-size: 1em;
-  margin-top: 1.5em;
+  margin-top: 1em;
 }
 
 #expRight .exp-inner h3 {
   font-size: 1.5em;
 }
 
+.expTop-tablet {
+  display: none;
+}
+
+.expTop-mobile {
+  display: block;
+}
+
 @media (min-width: 768px) {
-  #banner,
-  .contact {
+  #expTop {
+    display: flex;
+  }
+
+  .expTop-mobile {
+    display: none;
+  }
+
+  .expTop-tablet {
+    display: block;
+  }
+
+  #banner {
     width: 35%;
-    margin: 0 auto;
   }
 
   #expBottom {
@@ -641,12 +673,11 @@ ul {
     justify-content: space-between;
   }
 
-  #exp .exp-outer {
-    margin: 5em 0em 1em 0em;
+  #expBottom .exp-outer {
+    width: 47.5%;
   }
 
-  #expBottom .exp-outer {
-    width: 45%;
+  #expRight .exp-inner {
   }
 
   #expRight .exp-inner h3,
@@ -654,19 +685,13 @@ ul {
   #expRight .exp-inner a,
   #expRight .exp-inner p {
     font-size: 1em;
-    margin-top: 1.5em;
+    margin-top: 1em;
   }
 }
 
 @media (min-width: 1024px) {
-  #banner,
-  .contact {
-    width: 25%;
-    margin: 0 auto;
-  }
-
-  #exp .exp-outer {
-    margin: 5em 0em 2.5em 0em;
+  #expTop {
+    padding: 1em;
   }
 
   #expBottom .exp-outer {
@@ -683,16 +708,6 @@ ul {
 }
 
 @media (min-width: 1440px) {
-  #banner,
-  .contact {
-    width: 20%;
-    margin: 0 auto;
-  }
-
-  #expBottom .exp-outer {
-    width: 45%;
-  }
-
   #expRight .exp-inner h3,
   #expRight .exp-inner h4,
   #expRight .exp-inner a,
@@ -700,4 +715,7 @@ ul {
     font-size: 1em;
     margin-top: 1.5em;
   }
+}
+
+@media (min-width: 1920px) {
 }

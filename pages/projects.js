@@ -46,8 +46,13 @@ export default class ProjectsPage {
         </article>       
         </a>
         
-        
-        
+        </div>
+  
+
+        <h2 class="year">2019</h2>
+
+        <div class="book grid-container">
+
         <a href="https://joshbm-git.github.io/TeamPlayer/" target="_blank">        
         <article>
           <figure class="textOver">
@@ -82,6 +87,8 @@ export default class ProjectsPage {
         
         </div>
         </section>
+
+
       `;
   }
 }
