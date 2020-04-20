@@ -7,8 +7,8 @@ export default class ProjectsPage {
     document.querySelector("#app").innerHTML += /*html*/ `
         <section id="projects" class="page">
 
-
-        <div class="book grid-container">
+    
+       <div class="book grid-container">
 
         <figure class="outer-figure"  data-toggle="modal" data-target="#exampleModal" 
         data-title="BoardgameFinder" 
@@ -27,12 +27,35 @@ export default class ProjectsPage {
         <li>ES6</li>
         <li>Firebase</li>
         </ul>
+        <h5>Third Semester</h5>
         <p class='note'>Note: This was designed as a mobile app.</p>"
         data-img="images/boardgamefinder.png"
         data-link="https://joshbm.dk/projects/BoardGameFinder/">
-        <img src="images/boardgamefinder.png" alt="" />
+        <img src="images/boardgamefinder.png" alt="BoardGameFinder thumbnail" />
         </figure>
-    
+        
+        <figure class="outer-figure" data-toggle="modal" data-target="#exampleModal" 
+        data-title="Aegget & Skaegget" 
+        data-caption="
+        <p>Do you want to eat good food that will make you full without having to make it?</p>
+        data-img="images/aeggetogskaegget.png"
+        data-caption-extra="
+        <h2>Aegget & Skaegget</h2>
+        <p>Do you want to eat good food that will make you full without having to make it?</p>
+        <p>Order at AeggetOgSkaegget. There a lot of food to choose from.</p>
+        <p>The best part is, everything is 55,-</p>
+        <ul>
+        <h3>Tools:</h3>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JS</li>
+        </ul>
+        <h5>Second Semester</h5>
+        <p class='note'>Note: This was designed as a mobile app.</p"
+        data-img="images/aeggetogskaegget.png"
+        data-link="https://joshbm.dk/projects/BoardGameFinder/">
+        <img src="images/aeggetogskaegget.png" alt="" />
+        </figure>
 
         <figure class="outer-figure"  data-toggle="modal" data-target="#exampleModal" 
         data-title="Ceres TeamPlayer" 
@@ -49,7 +72,29 @@ export default class ProjectsPage {
         <li>CSS3</li>
         <li>JS</li>
         </ul>
-        <p>Second Semester</p>
+        <h5>Second Semester</h5>
+        <p class='note'>Note: This was designed as a mobile app.</p>"
+        data-img="images/teamplayer.png"
+        data-link="https://joshbm.dk/projects/BoardGameFinder/">
+        <img src="images/teamplayer.png" alt="" />
+        </figure>
+
+
+        <figure class="outer-figure"  data-toggle="modal" data-target="#exampleModal" 
+        data-title="GastroFun" 
+        data-caption="
+        <p>Are you looking for an interesting fantasy football manager?</p>"
+        data-caption-extra="
+        <h2>TeamPlayer</h2>
+        <p>Are you looking for an interesting fantasy football manager?</p>
+        <p>TeamPlayer is a fantasy football manager app. Whenever you go to a football game, you can make a team consisting of the players from the 2 teams that are playing.</p>
+        <p>Every player gets points depening on their performance during that game. Your objective is to get the most points using who you think will make the most impact from both teams.</p>
+        <ul>
+        <h3>Tools:</h3>
+        <li>Wordpress</li>
+        <li>Bootstrap</li>
+        </ul>
+        <h5>Second Semester</h5>
         <p class='note'>Note: This was designed as a mobile app.</p>"
         data-img="images/teamplayer.png"
         data-link="https://joshbm.dk/projects/BoardGameFinder/">
@@ -70,11 +115,12 @@ export default class ProjectsPage {
         <li>CSS3</li>
         <li>JS</li>
         </ul>
-        <p>Second Semester</p>"
-        data-img="images/webdoc.png"
+        <h5>Second Semester</h5>"
+        data-img="images/teamplayer.png"
         data-link="https://joshbm.dk/projects/BoardGameFinder/">
-        <img src="images/webdoc.png" alt="" />
+        <img src="images/teamplayer.png" alt="" />
         </figure>
+  
 
         <figure class="outer-figure"  data-toggle="modal" data-target="#exampleModal" 
         data-title="Thise greek yoghurt" 
@@ -90,44 +136,7 @@ export default class ProjectsPage {
         <li>CSS3</li>
         <li>JS</li>
         </ul>
-        <p>First Semester</p>"
-        data-img="images/thise.png"
-        data-link="https://joshbm.dk/projects/BoardGameFinder/">
-        <img src="images/thise.png" alt="" />
-        </figure>
-  
-
-            <figure class="outer-figure"  data-toggle="modal" data-target="#exampleModal" 
-        data-title="Havnebadet" 
-        data-caption="<p>Are you looking for a perfect winter bathing spot?</p>"
-        data-caption-extra="
-        <h2>Havnebadet</h2>
-        <p>Are you looking for a perfect winter bathing spot?</p>
-        <p>Pack your swimming clothes, and jump in the water in 'Havnebadet' or The Harbour Bath. In the winter you can enjoy water, and get heated up in the saunas afterwards every saturday and sunday from 10-12.
-        <ul>
-        <h3>Tools:</h3>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        </ul>
-        <p>First Semester</p>"
-        data-img="images/havnebadet.png"
-        data-link="https://joshbm.dk/projects/BoardGameFinder/">
-        <img src="images/thise.png" alt="" />
-        </figure>
-
-        <figure class="outer-figure"  data-toggle="modal" data-target="#exampleModal" 
-        data-title="Asia Travel" 
-        data-caption="
-        <p>Do you want to travel to Asia but don't know where to go and what to do?</p>"
-
-        data-caption-extra="
-        <p>Do you want to travel to Asia but don't know where to go and what to do?</p>
-        <p>Asia Travel provides guides to the most popular places to go in Asia. There are helpful tips such as how to plan your trip and what to do when arriving.</p>
-        <h3>Tools:</h3>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        </ul>        
-        <p>First Semester</p>"
+        <h5>First Semester</h5>"
         data-img="images/thise.png"
         data-link="https://joshbm.dk/projects/BoardGameFinder/">
         <img src="images/thise.png" alt="" />
@@ -147,11 +156,44 @@ export default class ProjectsPage {
         <li>HTML5</li>
         <li>CSS3</li>
         </ul>
-        <p>First Semester</p>
+        <h5>First Semester</h5>
         <p class='note'>Note: This was only a product page.</p>"
         data-img="images/teamplayer.png"
         data-link="https://joshbm.dk/projects/BoardGameFinder/">
         <img src="images/teamplayer.png" alt="" />
+        </figure>
+
+        
+        <figure class="outer-figure"  data-toggle="modal" data-target="#exampleModal" 
+        data-title="Asia Travel" 
+        data-caption="
+        <p>Do you want to travel to Asia but don't know where to go and what to do?</p>"
+
+        data-caption-extra="
+        <p>Do you want to travel to Asia but don't know where to go and what to do?</p>
+        <p>Asia Travel provides guides to the most popular places to go in Asia. There are helpful tips such as how to plan your trip and what to do when arriving.</p>
+        <h5>First Semester</h5>"
+        data-img="images/thise.png"
+        data-link="https://joshbm.dk/projects/BoardGameFinder/">
+        <img src="images/thise.png" alt="" />
+        </figure>
+
+        <figure class="outer-figure"  data-toggle="modal" data-target="#exampleModal" 
+        data-title="Havnebadet" 
+        data-caption="<p>Are you looking for a perfect winter bathing spot?</p>"
+        data-caption-extra="
+        <h2>Havnebadet</h2>
+        <p>Are you looking for a perfect winter bathing spot?</p>
+        <p>Pack your swimming clothes, and jump in the water in 'Havnebadet' or The Harbour Bath. In the winter you can enjoy water, and get heated up in the saunas afterwards every saturday and sunday from 10-12.
+        <ul>
+        <h3>Tools:</h3>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        </ul>
+        <h5>First Semester</h5>"
+        data-img="images/havnebadet.png"
+        data-link="https://joshbm.dk/projects/BoardGameFinder/">
+        <img src="images/thise.png" alt="" />
         </figure>
 
 

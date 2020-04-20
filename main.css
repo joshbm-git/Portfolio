@@ -296,7 +296,7 @@ select {
   .tabbar,
   #projects,
   #about {
-    width: 45%;
+    width: 75%;
     margin: 0 auto;
   }
 }
@@ -613,25 +613,29 @@ main section {
 
 @media (min-width: 1920px) {
   .book {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5em;
     border: solid;
   }
 
   .book .outer-figure {
-    width: 30em;
-    height: 30em;
+    width: 25em;
+    height: 45em;
     margin: 0 auto;
   }
 
   .book .outer-figure img {
     border: solid 10px var(--topbar-background);
+    border-radius: 2.5%;
   }
 
   .modal-content {
-    height: 85vh;
+    height: 80vh;
   }
 
+  .modal-footer {
+    display: none;
+  }
   .modal-header a {
     display: none;
   }
@@ -647,12 +651,13 @@ main section {
   }
 
   .book .inner-figure {
-    height: 42.5em;
+    height: 45em;
     width: 75em;
   }
 
   .book .inner-figure img {
     border: none;
+    object-fit: contain;
   }
 
   .modal .caption-short {
@@ -662,7 +667,7 @@ main section {
   .modal .caption-extra {
     display: block;
     width: 100%;
-    padding: 5em;
+    padding: 2em;
   }
 
   .caption-extra ul {
