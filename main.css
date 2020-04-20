@@ -15,9 +15,11 @@
   --orange: #ff9966;
   --dark-orange: #e4773f;
   --darker-orange: #c1541c;
-  --light-orange: #ffb18a;
+  --light-orange: #ffb28a;
+  --lighter-orange: #fff4ee;
 
   --yellow: #ffc266;
+  --light-yellow: #ffe1b5;
 
   --topbar-background: #ff9966;
 }
@@ -294,7 +296,7 @@ select {
   .tabbar,
   #projects,
   #about {
-    width: 60%;
+    width: 45%;
     margin: 0 auto;
   }
 }
@@ -411,6 +413,10 @@ main section {
 .year {
   margin: 1.5em 0 0.5em 0;
   text-align: center;
+}
+
+.wip img {
+  filter: blur(5px);
 }
 
 .book .outer-figure {
@@ -606,10 +612,20 @@ main section {
 }
 
 @media (min-width: 1920px) {
+  .book {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5em;
+    border: solid;
+  }
+
   .book .outer-figure {
-    width: 27.5em;
-    height: 27.5em;
-    margin-bottom: 5em;
+    width: 30em;
+    height: 30em;
+    margin: 0 auto;
+  }
+
+  .book .outer-figure img {
+    border: solid 10px var(--topbar-background);
   }
 
   .modal-content {
@@ -628,7 +644,6 @@ main section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border: solid;
   }
 
   .book .inner-figure {
