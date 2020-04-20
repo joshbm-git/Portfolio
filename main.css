@@ -440,7 +440,7 @@ main section {
 
 .modal-content {
   height: 70vh;
-  border: solid 2px var(--orange);
+  border: solid 3px var(--yellow);
 }
 
 .modal-content a {
@@ -467,13 +467,10 @@ main section {
   border-radius: 1%;
 }
 
-.modal-footer .btn {
+.modal .btn {
   color: white;
   border: none;
-}
-
-.modal-footer .btn-primary {
-  background-color: var(--dark-orange);
+  background-color: var(--darker-orange);
 }
 
 @media (min-width: 320px) and (max-height: 480px) {
@@ -615,6 +612,10 @@ main section {
     margin-bottom: 5em;
   }
 
+  .modal-content {
+    height: 85vh;
+  }
+
   .modal-header a {
     display: none;
   }
@@ -626,13 +627,17 @@ main section {
   .modal-body article {
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row-reverse;
     align-items: center;
+    border: solid;
   }
 
   .book .inner-figure {
     height: 42.5em;
     width: 75em;
+  }
+
+  .book .inner-figure img {
+    border: none;
   }
 
   .modal .caption-short {
@@ -645,29 +650,32 @@ main section {
     padding: 5em;
   }
 
-  .caption-extra h2 {
-  }
-
-  .caption-extra h3 {
-  }
   .caption-extra ul {
-    margin-top: 2em;
+    padding-top: 2em;
     list-style: none;
-  }
-  .caption-extra li {
   }
 
   .modal figcaption p {
     font-size: 1.2em;
+    margin-bottom: 0.1em;
   }
 
-  .modal-footer {
+  .note {
+    font-size: 1.1em !important;
+  }
+
+  .btn-wrapper {
     display: flex;
     justify-content: center;
+    padding-top: 2em;
+  }
+
+  .btn-inner {
+    font-size: 1.75em;
   }
 
   .modal-footer .btn {
-    font-size: 2em;
+    display: none;
   }
 }
 

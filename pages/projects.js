@@ -18,7 +18,7 @@ export default class ProjectsPage {
         <h2>Board Game Finder</h2>
         <p>Ever get stuck trying to figure out what boardgame you want to play? Let me help!</p>
         <p>You can search boardgames from the most popular. You can filter out boardgames after different specifications. You can go in to specific boardgames and read what they are about.</p>
-        <p> And lastly, you can add boardgames to your favorites.</p>
+        <p>And lastly, you can add boardgames to your favorites.</p>
         <ul>
         <h3>Tools:</h3>
         <li>HTML5</li>
@@ -27,7 +27,8 @@ export default class ProjectsPage {
         <li>API</li>
         <li>ES6</li>
         <li>Firebase</li>
-        </ul>"
+        </ul>
+        <p class='note'>Note: This was designed as a mobile app.</p>"
         data-img="images/boardgamefinder.png"
         data-link="https://joshbm.dk/projects/BoardGameFinder/">
         <img src="images/boardgamefinder.png" alt="" />
@@ -36,14 +37,36 @@ export default class ProjectsPage {
         <figure class="outer-figure" data-toggle="modal" data-target="#exampleModal" 
         data-title="AeggetOgSkaegget" 
         data-caption="
-        <p>This project is a design for a webshop.</p>
-        <p>Functions: Burger Menu</p>"
+        <h2>AeggetOgSkaegget</h2>
+        <p>Do you want to eat good food that will make you full without having to make it?</p>
+        <p>Order at AeggetOgSkaegget. There a lot of food to choose from.</p>
+        <p>The best part is, everything is 55,-</p>
+        <ul>
+        <h3>Tools:</h3>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>SPA</li>
+        <li>API</li>
+        <li>ES6</li>
+        <li>Firebase</li>
+        </ul>
+        <p class='note'>Note: This was designed as a mobile app.</p"
         data-img="images/aeggetogskaegget.png"
         data-caption-extra="
-        <p>This project is a design for a webshop.</p>
-        <p>Functions: Burger Menu</p>
-        <p>Functions: Burger Menu</p>
-        <p>Functions: Burger Menu</p>"
+        <h2>AeggetOgSkaegget</h2>
+        <p>Do you want to eat good food that will make you full without having to make it?</p>
+        <p>Order at AeggetOgSkaegget. There a lot of food to choose from.</p>
+        <p>The best part is, everything is 55,-</p>
+        <ul>
+        <h3>Tools:</h3>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>SPA</li>
+        <li>API</li>
+        <li>ES6</li>
+        <li>Firebase</li>
+        </ul>
+        <p class='note'>Note: This was designed as a mobile app.</p"
         data-img="images/aeggetogskaegget.png">
         <img src="images/aeggetogskaegget.png" alt="" />
         </figure>
@@ -111,7 +134,12 @@ export default class ProjectsPage {
                 <article>
                 <figure class="inner-figure"><img src=""></figure>
                 <figcaption class="caption-short"></figcaption>
-                <figcaption class="caption-extra"></figcaption>
+                <figcaption class="caption-extra">
+                <div class="caption-extra-inner"></div>
+                <div class="btn-wrapper">
+                <button type="button" class="btn btn-primary btn-inner">Check it out!</button>
+                </div>
+                </figcaption>
                 </article>
               </div>
               </a>
@@ -144,9 +172,11 @@ $(document).ready(function () {
     modal.find(".modal-header a").attr("href", link);
     modal.find(".modal-content a").attr("href", link);
     modal.find(".modal-body article figure img").attr("src", img);
-    modal.find(".modal-body article figcaption").html(caption);
+    modal.find(".modal-body article figcaption.caption-short").html(caption);
     modal
-      .find(".modal-body article figcaption.caption-extra")
+      .find(
+        ".modal-body article figcaption.caption-extra div.caption-extra-inner"
+      )
       .html(caption_extra);
   });
 });
