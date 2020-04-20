@@ -5,90 +5,78 @@ export default class ProjectsPage {
 
   template() {
     document.querySelector("#app").innerHTML += /*html*/ `
-        <section id="projects" class="page" target="_blank">
+        <section id="projects" class="page">
 
         <h2 class="year">2020</h2>
 
         <div class="book grid-container">
 
-  
+        <figure class="outer-figure"  data-toggle="modal" data-target="#exampleModal" 
+        data-title="BoardgameFinder" 
+        data-caption="<p>This project uses API to fetch data.</p> <p>Functions: Search, Add to favorites in Firebase, Filter, and Specific page according to ID</p>"
+        data-img="<img src='images/boardgamefinder.png'/>">
+        <img src="images/boardgamefinder.png" alt="" />
+        </figure>
         
-        <a href="https://joshbm-git.github.io/BoardGameFinder/">
-        <article>
-          <figure class="textOver">
-            <img src="images/boardgamefinder.png" alt="" />
-
-          </figure>
-
-          <figcaption>
-          <h2>BoardGame Finder</h2>
-          <p>This project uses API to fetch data.</p>
-          <p>Functions: Search, Add to favorites in Firebase, Filter, and Specific page according to ID</p>
-
-          </figcaption>
-        </article>     
-        </a>
+        <figure class="outer-figure" data-toggle="modal" data-target="#exampleModal" 
+        data-title="AeggetOgSkaegget" 
+        data-caption="
+        <p>This project is a design for a webshop.</p>
+        <p>Functions: Burger Menu</p>"
+        data-img='<img src="images/aeggetogskaegget.png" alt="" />'>
+        <img src="images/aeggetogskaegget.png" alt="" />
+        </figure>
 
 
-
-        <a href="https://joshbm-git.github.io/AeggetOgSkaegget/" target="_blank">
-        <article >
-          <figure class="textOver">
-            <img src="images/aeggetogskaegget.png" alt="" />
-          </figure>
-
-          <figcaption>
-          <h2>Ægget og Skægget</h2>
-          <p>This project is a design for a webshop.</p>
-          <p>Functions: Burger Menu</p>
-
-          </figcaption>
-        </article>       
-        </a>
+        <figure class="outer-figure"  data-toggle="modal" data-target="#exampleModal" 
+        data-title="Thise" 
+        data-caption="
+        <p>This project is a design for a product.</p>
+        <p>Functions: Burger Menu</p>"
+        data-img='<img src="images/thise.png" alt="" />'>
+        <img src="images/thise.png" alt="" />
+        </figure>
         
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <article>
+                <figure class="inner-figure"></figure>
+                <figcaption></figcaption>
+                </article>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
-  
+  </section>
 
-        <h2 class="year">2019</h2>
-
-        <div class="book grid-container">
-
-        <a href="https://joshbm-git.github.io/TeamPlayer/" target="_blank">        
-        <article>
-          <figure class="textOver">
-            <img src="images/teamplayer.png" alt="" />
-       
-          </figure>
-
-          <figcaption>
-          <h2>TeamPlayer</h2>
-          <p>This project is a design for a football manager app.</p>
-          <p>Functions: Burger Menu</p>
-
-          </figcaption>
-        </article>
-        </a>
-
-        <a href="https://joshbm-git.github.io/WebDoc/" target="_blank">
-        <article>
-          <figure class="textOver">
-            <img src="images/webdoc.png" alt="" />
-            
-          </figure>
-
-          <figcaption>
-          <h2>WebDoc</h2>
-          <p>This project is a webdocumentary of an efterskole.</p>
-          <p>Functions: Parallax, autoplay on scroll</p>
-
-          </figcaption>
-        </article>
-        </a>
-        
-        </div>
-        </section>
-
-
+ 
       `;
   }
 }
+
+$(document).ready(function () {
+  $("#exampleModal").on("show.bs.modal", function (event) {
+    var button = $(event.relatedTarget); // Button that triggered the modal
+    var title = button.data("title"); // Extract info from data-* attributes
+    var caption = button.data("caption"); // Extract info from data-* attributes
+    var img = button.data("img"); // Extract info from data-* attributes
+
+    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    var modal = $(this);
+    modal.find(".modal-title").text(title);
+    modal.find(".modal-body article figure").html(img);
+    modal.find(".modal-body article figcaption").html(caption);
+  });
+});

@@ -5,7 +5,6 @@ import TabBar from "./components/tabbar.js";
 import HomePage from "./pages/home.js";
 import ProjectsPage from "./pages/projects.js";
 import AboutPage from "./pages/about.js";
-import ContactPage from "./pages/contact.js";
 
 import spaService from "./services/spa.js";
 
@@ -16,7 +15,6 @@ let tabBar = new TabBar();
 let homePage = new HomePage();
 let projectsPage = new ProjectsPage();
 let aboutPage = new AboutPage();
-let contactPage = new ContactPage();
 
 // init services
 spaService.init();
