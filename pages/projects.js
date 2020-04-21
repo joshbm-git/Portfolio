@@ -30,14 +30,14 @@ export default class ProjectsPage {
         <h5>Third Semester</h5>
         <p class='note'>Note: This was designed as a mobile app.</p>"
         data-img="images/boardgamefinder.png"
-        data-link="https://joshbm.dk/projects/BoardGameFinder/">
+        data-link="https://joshbm.dk/projects/boardgamefinder/">
         <img src="images/boardgamefinder.png" alt="BoardGameFinder thumbnail" />
         </figure>
         
         <figure class="outer-figure" data-toggle="modal" data-target="#exampleModal" 
         data-title="Aegget & Skaegget" 
         data-caption="
-        <p>Do you want to eat good food that will make you full without having to make it?</p>
+        <p>Do you want to eat good food that will make you full without having to make it?</p>"
         data-img="images/aeggetogskaegget.png"
         data-caption-extra="
         <h2>Aegget & Skaegget</h2>
@@ -53,7 +53,7 @@ export default class ProjectsPage {
         <h5>Second Semester</h5>
         <p class='note'>Note: This was designed as a mobile app.</p"
         data-img="images/aeggetogskaegget.png"
-        data-link="https://joshbm.dk/projects/BoardGameFinder/">
+        data-link="https://joshbm.dk/projects/aeggetogskaegget/">
         <img src="images/aeggetogskaegget.png" alt="" />
         </figure>
 
@@ -75,7 +75,7 @@ export default class ProjectsPage {
         <h5>Second Semester</h5>
         <p class='note'>Note: This was designed as a mobile app.</p>"
         data-img="images/teamplayer.png"
-        data-link="https://joshbm.dk/projects/BoardGameFinder/">
+        data-link="https://joshbm.dk/projects/teamplayer/">
         <img src="images/teamplayer.png" alt="" />
         </figure>
 
@@ -116,14 +116,14 @@ export default class ProjectsPage {
         <li>JS</li>
         </ul>
         <h5>Second Semester</h5>"
-        data-img="images/teamplayer.png"
-        data-link="https://joshbm.dk/projects/BoardGameFinder/">
-        <img src="images/teamplayer.png" alt="" />
+        data-img="images/webdoc.png"
+        data-link="https://joshbm.dk/projects/webdoc/">
+        <img src="images/webdoc.png" alt="" />
         </figure>
   
 
         <figure class="outer-figure"  data-toggle="modal" data-target="#exampleModal" 
-        data-title="Thise greek yoghurt" 
+        data-title="Thise Light Greek Yoghurt" 
         data-caption="<p>Are you looking to lose weight without compromising the taste?</p>"
         data-caption-extra="
         <h2>Thise Light Greek Yoghurt</h2>
@@ -138,7 +138,7 @@ export default class ProjectsPage {
         </ul>
         <h5>First Semester</h5>"
         data-img="images/thise.png"
-        data-link="https://joshbm.dk/projects/BoardGameFinder/">
+        data-link="https://joshbm.dk/projects/thise/">
         <img src="images/thise.png" alt="" />
         </figure>
 
@@ -158,24 +158,24 @@ export default class ProjectsPage {
         </ul>
         <h5>First Semester</h5>
         <p class='note'>Note: This was only a product page.</p>"
-        data-img="images/teamplayer.png"
-        data-link="https://joshbm.dk/projects/BoardGameFinder/">
-        <img src="images/teamplayer.png" alt="" />
+        data-img="images/bjtrading.png"
+        data-link="https://joshbm.dk/projects/bjtrading/">
+        <img src="images/bjtrading.png" alt="" />
         </figure>
 
         
         <figure class="outer-figure"  data-toggle="modal" data-target="#exampleModal" 
-        data-title="Asia Travel" 
+        data-title="Travel Magazine" 
         data-caption="
-        <p>Do you want to travel to Asia but don't know where to go and what to do?</p>"
+        <p>Do you want to travel but don't know where to go and what to do?</p>"
 
         data-caption-extra="
-        <p>Do you want to travel to Asia but don't know where to go and what to do?</p>
-        <p>Asia Travel provides guides to the most popular places to go in Asia. There are helpful tips such as how to plan your trip and what to do when arriving.</p>
+        <p>Do you want to travel but don't know where to go and what to do?</p>
+        <p>This travel magazine provides guides to the most popular places to go in Asia. There are helpful tips such as how to plan your trip and what to do when arriving.</p>
         <h5>First Semester</h5>"
-        data-img="images/thise.png"
-        data-link="https://joshbm.dk/projects/BoardGameFinder/">
-        <img src="images/thise.png" alt="" />
+        data-img="images/travelmagazine.png"
+        data-link="https://joshbm.dk/projects/travelmagazine/">
+        <img src="images/travelmagazine.png" alt="" />
         </figure>
 
         <figure class="outer-figure"  data-toggle="modal" data-target="#exampleModal" 
@@ -192,8 +192,8 @@ export default class ProjectsPage {
         </ul>
         <h5>First Semester</h5>"
         data-img="images/havnebadet.png"
-        data-link="https://joshbm.dk/projects/BoardGameFinder/">
-        <img src="images/thise.png" alt="" />
+        data-link="https://joshbm.dk/projects/havnebadet/">
+        <img src="images/havnebadet.png" alt="" />
         </figure>
 
 
