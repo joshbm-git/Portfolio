@@ -28,9 +28,9 @@ export default class ProjectsPage {
         <li>Firebase</li>
         </ul>
         <h5>Third Semester</h5>
-        <p class='note'>Note: This was designed as a mobile app.</p>"
+        <p class='note'>Note: This was designed as a mobile app, so there is no laptop design.</p>"
         data-img="images/boardgamefinder.png"
-        data-link="https://joshbm.dk/projects/boardgamefinder/">
+        data-link="https://joshbm.dk/projects/BoardGameFinder/">
         <img src="images/boardgamefinder.png" alt="BoardGameFinder thumbnail" />
         </figure>
         
@@ -49,11 +49,12 @@ export default class ProjectsPage {
         <li>HTML5</li>
         <li>CSS3</li>
         <li>JS</li>
+        <li>Bootstrap</li>
         </ul>
         <h5>Second Semester</h5>
-        <p class='note'>Note: This was designed as a mobile app.</p"
+        <p class='note'>Note: This is a webshop design. There is no actual webshop functionality.</p"
         data-img="images/aeggetogskaegget.png"
-        data-link="https://joshbm.dk/projects/aeggetogskaegget/">
+        data-link="https://joshbm.dk/projects/AeggetOgSkaegget/">
         <img src="images/aeggetogskaegget.png" alt="" />
         </figure>
 
@@ -65,39 +66,17 @@ export default class ProjectsPage {
         <h2>TeamPlayer</h2>
         <p>Are you looking for an interesting fantasy football manager?</p>
         <p>TeamPlayer is a fantasy football manager app. Whenever you go to a football game, you can make a team consisting of the players from the 2 teams that are playing.</p>
-        <p>Every player gets points depening on their performance during that game. Your objective is to get the most points using who you think will make the most impact from both teams.</p>
         <ul>
         <h3>Tools:</h3>
         <li>HTML5</li>
         <li>CSS3</li>
         <li>JS</li>
+        <li>JSON</li>
         </ul>
         <h5>Second Semester</h5>
-        <p class='note'>Note: This was designed as a mobile app.</p>"
+        <p class='note'>Note: This was designed as a mobile app, so there is no laptop design. Burger menu only works as it should on mobile viewport.</p>"
         data-img="images/teamplayer.png"
-        data-link="https://joshbm.dk/projects/teamplayer/">
-        <img src="images/teamplayer.png" alt="" />
-        </figure>
-
-
-        <figure class="outer-figure"  data-toggle="modal" data-target="#exampleModal" 
-        data-title="GastroFun" 
-        data-caption="
-        <p>Are you looking for an interesting fantasy football manager?</p>"
-        data-caption-extra="
-        <h2>TeamPlayer</h2>
-        <p>Are you looking for an interesting fantasy football manager?</p>
-        <p>TeamPlayer is a fantasy football manager app. Whenever you go to a football game, you can make a team consisting of the players from the 2 teams that are playing.</p>
-        <p>Every player gets points depening on their performance during that game. Your objective is to get the most points using who you think will make the most impact from both teams.</p>
-        <ul>
-        <h3>Tools:</h3>
-        <li>Wordpress</li>
-        <li>Bootstrap</li>
-        </ul>
-        <h5>Second Semester</h5>
-        <p class='note'>Note: This was designed as a mobile app.</p>"
-        data-img="images/teamplayer.png"
-        data-link="https://joshbm.dk/projects/BoardGameFinder/">
+        data-link="https://joshbm.dk/projects/TeamPlayer/">
         <img src="images/teamplayer.png" alt="" />
         </figure>
 
@@ -108,16 +87,18 @@ export default class ProjectsPage {
         data-caption-extra="
         <h2>Eriksminde Efterskole</h2>
         <p>Eriksminde Efterskole is a place where we, with an artistic, democratic, professional and philosophical basis, make a school where people meet equally, safely and confidently.</p>
-        <p>We place the freedom, the appetite and the ability to be amazed and engrossed in the subjects, of life and of each other in the highest priority. We do our utmost to do everything we do, because it deserves life. And we do it together with a glance for the individual.</p>
+        <p>We place the freedom, the appetite and the ability to be amazed and engrossed in the subjects, of life and of each other in the highest priority.</p>
         <ul>
         <h3>Tools:</h3>
         <li>HTML5</li>
         <li>CSS3</li>
         <li>JS</li>
         </ul>
-        <h5>Second Semester</h5>"
+        <h5>Second Semester</h5>
+        Note: This videos were personally filmed and edited.
+        "
         data-img="images/webdoc.png"
-        data-link="https://joshbm.dk/projects/webdoc/">
+        data-link="https://joshbm.dk/projects/WebDoc/">
         <img src="images/webdoc.png" alt="" />
         </figure>
   
@@ -136,9 +117,10 @@ export default class ProjectsPage {
         <li>CSS3</li>
         <li>JS</li>
         </ul>
-        <h5>First Semester</h5>"
+        <h5>First Semester</h5>
+        Note: This is only a product page with static recipes."
         data-img="images/thise.png"
-        data-link="https://joshbm.dk/projects/thise/">
+        data-link="https://joshbm.dk/projects/Thise/">
         <img src="images/thise.png" alt="" />
         </figure>
 
@@ -157,24 +139,24 @@ export default class ProjectsPage {
         <li>CSS3</li>
         </ul>
         <h5>First Semester</h5>
-        <p class='note'>Note: This was only a product page.</p>"
+        <p class='note'>Note: This was only a product page and general webshop page. The other links do not work.</p>"
         data-img="images/bjtrading.png"
-        data-link="https://joshbm.dk/projects/bjtrading/">
+        data-link="https://joshbm.dk/projects/BJTrading/">
         <img src="images/bjtrading.png" alt="" />
         </figure>
 
         
         <figure class="outer-figure"  data-toggle="modal" data-target="#exampleModal" 
-        data-title="Travel Magazine" 
+        data-title="Asia Travel" 
         data-caption="
-        <p>Do you want to travel but don't know where to go and what to do?</p>"
+        <p>Do you want to travel to Asia but don't know where to go and what to do?</p>"
 
         data-caption-extra="
-        <p>Do you want to travel but don't know where to go and what to do?</p>
-        <p>This travel magazine provides guides to the most popular places to go in Asia. There are helpful tips such as how to plan your trip and what to do when arriving.</p>
+        <p>Do you want to travel to Asia but don't know where to go and what to do?</p>
+        <p>Asia Travel provides guides to the most popular places to go in Asia. There are helpful tips such as how to plan your trip and what to do when arriving.</p>
         <h5>First Semester</h5>"
         data-img="images/travelmagazine.png"
-        data-link="https://joshbm.dk/projects/travelmagazine/">
+        data-link="https://joshbm.dk/projects/TravelMagazine/">
         <img src="images/travelmagazine.png" alt="" />
         </figure>
 
@@ -189,10 +171,13 @@ export default class ProjectsPage {
         <h3>Tools:</h3>
         <li>HTML5</li>
         <li>CSS3</li>
+        <li>Bootstrap</li>
+        <li>SPA</li>
         </ul>
-        <h5>First Semester</h5>"
+        <h5>First Semester</h5>
+        <p class='note'>Note: This page code was overhauled, explaining the SPA code even though it is from the first semester.</p>"
         data-img="images/havnebadet.png"
-        data-link="https://joshbm.dk/projects/havnebadet/">
+        data-link="https://joshbm.dk/projects/Havnebadet/">
         <img src="images/havnebadet.png" alt="" />
         </figure>
 
@@ -215,16 +200,14 @@ export default class ProjectsPage {
                 <figcaption class="caption-short"></figcaption>
                 <figcaption class="caption-extra">
                 <div class="caption-extra-inner"></div>
-                <div class="btn-wrapper">
-                <button type="button" class="btn btn-primary btn-inner">Check it out!</button>
-                </div>
                 </figcaption>
                 </article>
               </div>
-              </a>
+           
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary">Check it out!</button>
               </div>
+              </a>
             </div>
           </div>
         </div>

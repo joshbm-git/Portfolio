@@ -1,6 +1,7 @@
 // import your components, pages and services
 import TopBar from "./components/topbar.js";
 import TabBar from "./components/tabbar.js";
+import Preloader from "./components/preloader.js";
 
 import HomePage from "./pages/home.js";
 import ProjectsPage from "./pages/projects.js";
@@ -11,6 +12,7 @@ import spaService from "./services/spa.js";
 // Declare and init
 let topBar = new TopBar();
 let tabBar = new TabBar();
+let preloader = new Preloader();
 
 let homePage = new HomePage();
 let projectsPage = new ProjectsPage();

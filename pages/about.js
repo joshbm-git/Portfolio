@@ -6,11 +6,6 @@ export default class AboutPage {
   template() {
     document.querySelector("#app").innerHTML += /*html*/ `
         <section id="about" class="page">
-
-
-
-
-
           <div id="exp">
             <div id="expTop" class="shadow exp-outer">
               <div class="exp-inner expTop-tablet">
@@ -31,16 +26,12 @@ export default class AboutPage {
               <img src="images/portrait.jpg" alt="" />
          
               <nav class="contact">
-                    <a  href="https://github.com/joshbm-git"
+                    <a href="https://github.com/joshbm-git" target="_blank"
                     ><i class="fab fa-github"></i
                   ></a>
-                  <a href="https://www.linkedin.com/in/joshua-mercado-854767179/"
+                  <a href="https://www.linkedin.com/in/joshua-mercado-854767179/" target="_blank"
                     ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                  <a href="mailto:joshuabacuriomercado@gmail.com"
-                    ><i class="fas fa-envelope"></i
-                  ></a>
-                 
+                  ></a>                
                     </nav>
                     </article> 
               </figure> 
@@ -86,7 +77,7 @@ export default class AboutPage {
               <div class="exp-inner">
                 <h2>CV</h2>
                 <h3>
-                <a href="">Download my CV here.</a>
+                <a href="../Joshua_Bacurio_Mercado_CV.pdf" download>Download my CV here</a>
                 </h3>
                 <h4>Contact info:</h4>
                 <a href = "mailto: joshuabacuriomercado@gmail.com">joshuabacuriomercado@gmail.com</a>
@@ -101,13 +92,3 @@ export default class AboutPage {
       `;
   }
 }
-
-/* 
-<figure id="banner" class="shadow-sm">
-<img src="images/banner.png" alt="" />
-<figcaption>
-  <h1 class="display-4">Hi,</h1>
-  <h1 class="display-4">I'm Joshua</h1>
-
-</figcaption>
-</figure> */

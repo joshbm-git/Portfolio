@@ -9,7 +9,9 @@ export default class TabBar {
       
       <nav class="tabbar nav-links">
         
-        <div class="logo">J</div>
+        <div class="logo">
+        <a href="#home">J</a>
+        </div>
 
         <div class="links">
 
@@ -22,7 +24,7 @@ export default class TabBar {
 
     
             <a href="#projects">  
-              <i class="fas fa-fire-alt"></i>
+            <i class="fas fa-folder-open"></i>
               <p>projects</p> 
             </a> 
 
